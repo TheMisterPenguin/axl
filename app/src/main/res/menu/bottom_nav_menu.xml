@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/navigation_matcher"
+        android:icon="@drawable/axl_matcher"
+        android:title="@string/title_matcher" />
+    <item
+        android:id="@+id/navigation_recipe_creator"
+        android:icon="@drawable/axl_recipe_creator"
+        android:title="@string/title_recipe_creator" />
+    <item
+        android:id="@+id/navigation_recipes"
+        android:icon="@drawable/axl_cutlery"
+        android:title="@string/title_recipes" />
+    <item
+        android:id="@+id/navigation_bookmarked"
+        android:icon="@drawable/axl_bookmarked"
+        android:title="@string/title_bookmarked" />
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/axl_settings"
+        android:title="@string/title_settings" />
+</menu>

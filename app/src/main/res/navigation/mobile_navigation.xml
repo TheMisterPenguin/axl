@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_recipes">
+
+    <fragment
+        android:id="@+id/navigation_matcher"
+        android:name="fr.axl.axl.ui.matcher.Matcher"
+        android:label="@string/title_matcher"
+        tools:layout="@layout/fragment_matcher" />
+
+    <fragment
+        android:id="@+id/navigation_recipe_creator"
+        android:name="fr.axl.axl.ui.recipes.RecipeCreator"
+        android:label="@string/title_recipe_creator"
+        tools:layout="@layout/fragment_recipe_creator" />
+
+    <fragment
+        android:id="@+id/navigation_recipes"
+        android:name="fr.axl.axl.ui.recipes.Recipes"
+        android:label="@string/title_recipes"
+        tools:layout="@layout/fragment_recipes" />
+
+    <fragment
+        android:id="@+id/navigation_bookmarked"
+        android:name="fr.axl.axl.ui.bookmarks.Bookmarked"
+        android:label="@string/title_bookmarked"
+        tools:layout="@layout/fragment_bookmarked" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="fr.axl.axl.ui.settings.Settings"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

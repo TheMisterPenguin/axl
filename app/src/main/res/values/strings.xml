@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Axelle Viens Manger</string>
+    <string name="title_activity_main">Axelle</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_recipes">Recettes</string>
+    <string name="title_settings">Paramètres</string>
+    <string name="title_matcher">Matcheur</string>
+    <string name="title_recipe_creator">Générateur</string>
+    <string name="title_bookmarked">Enregistrées</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

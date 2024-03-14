@@ -8,14 +8,20 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <fr.axl.axl.components.RecipeCardView
-        android:id="@+id/recipeCardView"
-        android:layout_width="wrap_content"
-        android:layout_height="436dp" />
-
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="371dp"
-        android:text="toto" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <fr.axl.axl.components.RecipeCardView
+            android:id="@+id/recipeCardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <fr.axl.axl.components.RecipeCardView
+            android:id="@+id/recipeCardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 
 </FrameLayout>

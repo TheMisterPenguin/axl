@@ -14,12 +14,10 @@
         android:orientation="vertical">
 
         <fr.axl.axl.components.RecipeCardView
-            android:id="@+id/recipeCardView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <fr.axl.axl.components.RecipeCardView
-            android:id="@+id/recipeCardView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>

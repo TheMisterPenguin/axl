@@ -17,6 +17,13 @@ public class RecipeDO {
     public String getName() {return name;}
     public void setName(String name) {this.name = name;}
 
+
+    // Description du plat
+    private String description;
+    public String getDescription() {return description;}
+    public void setDescription(String description) {this.description = description;}
+
+
     private Long rating;
     public Long getRating() { return rating; }
     public void setRating(Long rating) { this.rating = rating; }
@@ -35,6 +42,27 @@ public class RecipeDO {
     private List<RecipeInstructionDO> instruction;
     public List<RecipeInstructionDO> getInstructions() { return instruction; }
     public void setInstructions(List<RecipeInstructionDO> instruction) { this.instruction = instruction; }
-    
-    
+
+
+    // Durée de l'exécution de la recette (en minutes)
+    private int duration;
+    public int getDuration() { return duration; }
+    public void setDuration(int duration) { this.duration = duration; }
+
+
+    // Nombre de personnes
+    private int nbPeople;
+    public int getNbPeople() { return nbPeople; }
+    public void setNbPeople(int nbPeople) { this.nbPeople = nbPeople; }
+
+
+
+    // Origine géograpique
+
+    private String country;
+
+    public String getCountry() { return country;}
+
+    public void setCountry(String country) {this.country = country;}
+
 }

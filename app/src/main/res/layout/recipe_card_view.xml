@@ -4,48 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/card_background"
     android:layout_width="match_parent"
-
-    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:layout_height="250dp"
+    android:maxWidth="535dp"
     android:background="@drawable/axl_card_background"
-    android:elevation="5dp">
+    >
 
 
     <ImageView
         android:id="@+id/recipe_image"
         android:layout_width="match_parent"
         android:layout_height="250dp"
+        android:maxWidth="535dp"
         android:scaleType="centerCrop"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/axl_exemple_dish" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="end"
-        android:orientation="horizontal"
-        android:paddingTop="5dp"
-        android:paddingRight="5dp"
-        app:layout_constraintEnd_toEndOf="parent">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/axl_bookmark" />
-    </LinearLayout>
+        app:srcCompat="@drawable/axl_exemple_dish"
+        tools:visibility="visible" />
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="bottom"
         android:orientation="vertical"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.5"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        android:maxWidth="535dp"
+        tools:visibility="visible">
 
         <GridLayout
             android:id="@+id/card_info"
@@ -54,6 +45,7 @@
             android:layout_marginTop="8dp"
             android:background="@drawable/axl_background"
             android:padding="4dp"
+            android:maxWidth="535dp"
             android:textSize="18sp">
 
 
@@ -72,6 +64,38 @@
         </GridLayout>
 
         <!-- Ajoutez d'autres éléments de vue selon votre besoin -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:maxWidth="535dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/axl_bookmark" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:maxWidth="535dp"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/loader"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 

@@ -21,11 +21,14 @@ import fr.axl.axl.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static MainActivity mainActivity;
+
     private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        mainActivity = this;
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());

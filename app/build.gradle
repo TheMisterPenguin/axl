@@ -6,6 +6,22 @@ android {
     namespace 'fr.axl.axl'
     compileSdk 33
 
+    packagingOptions {
+        exclude("META-INF/INDEX.LIST")
+        exclude("META-INF/LICENSE")
+        exclude("META-INF/LICENSE.txt")
+        exclude("META-INF/LICENSE.md")
+        exclude("META-INF/NOTICE.md")
+        exclude("META-INF/jing-copying.html")
+        exclude("META-INF/license.txt")
+        exclude("META-INF/NOTICE")
+        exclude("META-INF/NOTICE.txt")
+        exclude("META-INF/DEPENDENCIES.txt")
+        exclude("META-INF/ASL2.0")
+        exclude("META-INF/*.kotlin_module")
+    }
+
+
     defaultConfig {
         applicationId "fr.axl.axl"
         minSdk 29
@@ -41,6 +57,8 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
     implementation 'androidx.navigation:navigation-fragment:2.5.2'
     implementation 'androidx.navigation:navigation-ui:2.5.2'
+    implementation 'org.jboss.weld:weld-core-impl:6.0.0.Beta1'
+    implementation 'jakarta.enterprise:jakarta.enterprise.cdi-api:4.1.0.RC1'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
